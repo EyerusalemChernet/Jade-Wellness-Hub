@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaPhone, FaEnvelope, FaMapMarkerAlt, FaHeart } from "react-icons/fa";
 import { useState } from "react";
 import { toast } from "react-toastify";
-import logo from "../../public/jadelogo.png";
+import logo from "/jadelogo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
