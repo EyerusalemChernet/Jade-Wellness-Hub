@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaPhone, FaEnvelope, FaMapMarkerAlt, FaHeart } from "react-icons/fa";
 import { useState } from "react";
 import { toast } from "react-toastify";
-import logo from "../../public/jadelogo.png";
+import jadelogo from '../assets/jadelogo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -67,7 +67,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-12 h-12 bg-green-600 rounded-2xl flex items-center justify-center overflow-hidden">
-                <img src={logo} alt="Jade Wellness Logo" className="w-8 h-8 object-contain" />
+                <img src={jadelogo} alt="Jade Wellness Logo" className="w-8 h-8 object-contain" />
               </div>
               <div>
                 <h3 className="text-xl font-bold font-heading">Jade Wellness</h3>
