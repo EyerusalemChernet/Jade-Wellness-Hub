@@ -10,6 +10,7 @@ import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import Chatbot from "./components/Chatbot.jsx";
 import LoadingSpinner from "./components/LoadingSpinner.jsx";
+import { SpeedInsights } from "@vercel/speed-insights/react"; // Added SpeedInsights import
 
 // Lazy load pages for better performance
 const Home = lazy(() => import("./pages/Home.jsx"));
@@ -123,6 +124,7 @@ function AppContent() {
 				
 				<Footer />
 				<Chatbot />
+				<SpeedInsights /> {/* Added SpeedInsights component */}
 				<ToastContainer
 					position="top-right"
 					autoClose={5000}
